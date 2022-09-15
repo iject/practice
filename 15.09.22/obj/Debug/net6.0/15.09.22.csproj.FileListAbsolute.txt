@@ -1,0 +1,15 @@
+C:\Users\VAChernomyrdin\source\repos\15.09.22\15.09.22\bin\Debug\net6.0\15.09.22.exe
+C:\Users\VAChernomyrdin\source\repos\15.09.22\15.09.22\bin\Debug\net6.0\15.09.22.deps.json
+C:\Users\VAChernomyrdin\source\repos\15.09.22\15.09.22\bin\Debug\net6.0\15.09.22.runtimeconfig.json
+C:\Users\VAChernomyrdin\source\repos\15.09.22\15.09.22\bin\Debug\net6.0\15.09.22.dll
+C:\Users\VAChernomyrdin\source\repos\15.09.22\15.09.22\bin\Debug\net6.0\15.09.22.pdb
+C:\Users\VAChernomyrdin\source\repos\15.09.22\15.09.22\obj\Debug\net6.0\15.09.22.csproj.AssemblyReference.cache
+C:\Users\VAChernomyrdin\source\repos\15.09.22\15.09.22\obj\Debug\net6.0\15.09.22.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\VAChernomyrdin\source\repos\15.09.22\15.09.22\obj\Debug\net6.0\15.09.22.AssemblyInfoInputs.cache
+C:\Users\VAChernomyrdin\source\repos\15.09.22\15.09.22\obj\Debug\net6.0\15.09.22.AssemblyInfo.cs
+C:\Users\VAChernomyrdin\source\repos\15.09.22\15.09.22\obj\Debug\net6.0\15.09.22.csproj.CoreCompileInputs.cache
+C:\Users\VAChernomyrdin\source\repos\15.09.22\15.09.22\obj\Debug\net6.0\15.09.22.dll
+C:\Users\VAChernomyrdin\source\repos\15.09.22\15.09.22\obj\Debug\net6.0\refint\15.09.22.dll
+C:\Users\VAChernomyrdin\source\repos\15.09.22\15.09.22\obj\Debug\net6.0\15.09.22.pdb
+C:\Users\VAChernomyrdin\source\repos\15.09.22\15.09.22\obj\Debug\net6.0\15.09.22.genruntimeconfig.cache
+C:\Users\VAChernomyrdin\source\repos\15.09.22\15.09.22\obj\Debug\net6.0\ref\15.09.22.dll
