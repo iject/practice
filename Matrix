@@ -1,0 +1,126 @@
+using System;
+using System.Collections.Generic;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Matrix_cl
+{
+    internal class Matrix
+    {
+        private int n;
+        private int m;
+        private double[,] matr;
+
+        public Matrix() // c клавы
+        {
+
+        }
+        public Matrix(int n, int m) // для рандомного заполнения
+        {
+            Random r = new Random();
+            this.n = n;
+            this.m = m;
+            double[,] matr = new double[n, m];
+
+            for (int i = 0; i < n; i++)
+            {
+                for(int j = 0; j < m; j++)
+                {
+                    matr[i, j] = r.NextInt64(100,999)/10.0;
+                }
+            }
+            this.matr = matr;
+        }
+
+        public Matrix(int n, int m, bool flag = true) // для заполнения 0-ми
+        {
+            Random r = new Random();
+            this.n = n;
+            this.m = m;
+            double[,] matr = new double[n, m];
+
+            for (int i = 0; i < n; i++)
+            {
+                for (int j = 0; j < m; j++)
+                {
+                    matr[i, j] = 0;
+                }
+            }
+            this.matr = matr;
+        }
+        public Matrix(string filename)
+        {
+
+        }
+
+        public void show()
+        {
+            for(int i = 0; i < this.n; i++)
+            {
+                for(int j = 0; j < this.m; j++)
+                {
+                    Console.Write("{0,-5} ", matr[i, j]);
+                }
+                Console.WriteLine();
+            }
+                Console.WriteLine();
+        }
+
+        public static Matrix operator +(Matrix a, Matrix b)
+        {
+            /*int n = a.n > b.n ? a.n : b.n;
+            int m = a.m > b.m ? a.m : b.m;
+            double[,] matr = new double[n, m];
+
+            Matrix amat = new Matrix(n, m, true);
+            Matrix bmat = new Matrix(n, m, true);
+
+            for (int i = 0; i < a.n; i++)
+            {
+                for (int j = 0; j < a.m; j++)
+                {
+                    amat.matr[i,j] = a.matr[i,j];
+                }
+             }
+
+            for (int i = 0; i < b.n; i++)
+            {
+                for (int j = 0; j < b.m; j++)
+                {
+                    bmat.matr[i,j] = b.matr[i,j];
+                }
+            }*/
+
+            if (a.n == b.n && a.m == b.m)
+            {
+                for (int i = 0; i < a.n; i++)
+                {
+                    for (int j = 0; j < a.m; j++)
+                    {
+                        a.matr[i, j] = Math.Round(a.matr[i, j] + b.matr[i, j],2);
+                    }
+                }
+                return a;
+            }
+            throw new ArgumentException("Размерность матриц не совпадает");
+        }
+        
+        public static Matrix operator -(Matrix a, Matrix b)
+        {
+            if (a.n == b.n && a.m == b.m)
+            {
+                for (int i = 0; i < a.n; i++)
+                {
+                    for (int j = 0; j < a.m; j++)
+                    {
+                        a.matr[i, j] = Math.Round(a.matr[i, j] - b.matr[i, j],2);
+                    }
+                }
+                return a;
+            }
+            throw new ArgumentException("Размерность матриц не совпадает");
+        }
+    }
+}
